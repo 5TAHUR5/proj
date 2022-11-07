@@ -32,8 +32,10 @@ document.getElementById("sub").onclick = () =>{
     skip_el.innerText = skip
     first_el.innerText = first
 
-    loader_el.classList.add("hide")
-    result_el.classList.remove("hide")
+    setTimeout(() => {
+        loader_el.classList.add("hide")
+        result_el.classList.remove("hide")
+    }, 1000)
 }
 
 document.getElementById("back").onclick = () => {
