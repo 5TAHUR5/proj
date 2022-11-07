@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
-<h1 class="dfg">Hello</h1>
+<main>
+    <div class="content">
+        <div id="form" class="first_form">
+            <label for="count_choice">Введите количество предложений:</label><br/>
+            <input min="1" type="number" name="count_choice" id="count_choice"/><br/>
+            <button id="sub">
+                Обработать
+            </button>
+        </div>
+        <div id="loader" class="loader hide">
+
+        </div>
+        <div id="result" class="result hide">
+            <span><b>Вероятность получить верное предложение:</b><i id="chance">0,356</i></span><br/>
+            <span><b>Сколько надо пропустить:</b><i id="skip">25</i></span><br/>
+            <span><b>С какого надо принимать первое верное предложение:</b><i id="first">26</i></span><br/>
+            <button id="back">&#8592; вернуться</button>
+        </div>
+    </div>
+</main>
+
 </body>
 </html>
