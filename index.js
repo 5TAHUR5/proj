@@ -19,14 +19,14 @@ document.getElementById("sub").onclick = () =>{
     loader_el.classList.remove("hide")
 
     let S = 0
-    let t = 0
+    let t = count_choice
     while (S < 1) {
         S = S + 1/count_choice
         first = count_choice
         count_choice = count_choice - 1
     }
     skip = count_choice
-    chance = first / count_choice
+    chance = first / t
 
     chance_el.innerText = chance
     skip_el.innerText = skip
