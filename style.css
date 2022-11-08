@@ -16,7 +16,10 @@ main {
     max-width: 500px;
     width: 100%;
     height: 500px;
+    max-height: calc(100vh - 30px);
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .first_form {
@@ -24,18 +27,19 @@ main {
 }
 
 .first_form label {
-    font-size: 1.3em;
+    font-size: 21px;
     display: block;
 }
 
 .first_form input {
+    max-width: 100%;
     padding: 8px 16px;
     margin-top: 15px;
-    font-size: 1.3em;
+    font-size: 21px;
     font-family: inherit;
     border-radius: 6px;
     -webkit-appearance: none;
-    color: #99A3BA;
+    color: #6c7482;
     border: 1px solid #CDD9ED;
     background: #fff;
     transition: border .3s ease;
@@ -48,10 +52,11 @@ main {
 }
 
 .first_form button {
+    max-width: 100%;
     margin-top: 15px;
     width: 341px;
     height: 43px;
-    font-size: 1.2em;
+    font-size: 21px;
     border-radius: 0;
     background: #007bff;
     border: 1px solid gray;
@@ -59,20 +64,28 @@ main {
 }
 
 .result {
-    width: 100%;
+    width: 96%;
 
 }
 
 .result span {
+    margin-top: 10px;
+    font-size: 17px;
     display: flex;
     justify-content: space-between;
+}
+
+.result i {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .result button {
     margin-top: 15px;
     width: 50%;
     height: 43px;
-    font-size: 1.2em;
+    font-size: 19px;
     border-radius: 0;
     background: #007bff;
     border: 1px solid gray;
